@@ -2,6 +2,25 @@ import { LanguageSwitcher } from './LanguageSwitcher'
 import { useLanguage } from '../i18n/useLanguage'
 import { siteContent } from '../siteContent'
 
+function LogoWordmark({ name }: { name: string }) {
+  const parts = name.trim().split(/\s+/)
+  if (parts.length >= 2) {
+    const first = parts[0]
+    const rest = parts.slice(1).join(' ')
+    return (
+      <span className="site-header__logo">
+        <span className="site-header__logo-part site-header__logo-part--1">{first}</span>
+        <span className="site-header__logo-part site-header__logo-part--2"> {rest}</span>
+      </span>
+    )
+  }
+  return (
+    <span className="site-header__logo">
+      <span className="site-header__logo-part site-header__logo-part--1">{name}</span>
+    </span>
+  )
+}
+
 export function SiteHeader() {
   const { brand } = siteContent
   const { t } = useLanguage()
@@ -16,7 +35,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <a href="#top" className="site-header__brand">
-        <span className="site-header__name">{brand.name}</span>
+        <LogoWordmark name={brand.name} />
         <span className="site-header__script" lang="am">
           {brand.nameScript}
         </span>
