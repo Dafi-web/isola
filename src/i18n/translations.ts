@@ -12,7 +12,13 @@ export const translations: Record<Locale, Messages> = {
   en: {
     langLabel: 'Language',
     navAria: 'Primary navigation',
-    nav: { food: 'Food', story: 'Story', menu: 'Menu', visit: 'Visit' },
+    nav: {
+      food: 'Food',
+      story: 'Story',
+      menu: 'Menu',
+      gallery: 'Photos',
+      visit: 'Visit',
+    },
     brandTagline: 'Authentic Ethiopian & Eritrean cuisine in Milan 🇪🇹',
     heroEyebrow: 'Milan · Ethiopia & Eritrea',
     heroFigureCap: 'Isola Verde · African cuisine, Eritrean & Italian specialties',
@@ -38,6 +44,13 @@ export const translations: Record<Locale, Messages> = {
     menuPageTitle: 'Menu',
     menuPageLead:
       'Traditional dishes prepared every day. Prices as served in the restaurant.',
+    galleryTitle: 'Menu photos',
+    galleryLead:
+      'Printed menu pages from the restaurant — tap an image to view it larger.',
+    galleryImageAlt: 'Menu photo',
+    galleryCloseAria: 'Close',
+    galleryPrevAria: 'Previous photo',
+    galleryNextAria: 'Next photo',
     menuPanelVegetarian: 'Vegetarian menu',
     menuPanelMeat: 'Meat dishes',
     menuPanelRicePasta: 'Rice & pasta',
@@ -59,7 +72,13 @@ export const translations: Record<Locale, Messages> = {
   it: {
     langLabel: 'Lingua',
     navAria: 'Navigazione principale',
-    nav: { food: 'Cibo', story: 'Storia', menu: 'Menu', visit: 'Dove siamo' },
+    nav: {
+      food: 'Cibo',
+      story: 'Storia',
+      menu: 'Menu',
+      gallery: 'Foto',
+      visit: 'Dove siamo',
+    },
     brandTagline: 'Cucina etio-eritrea autentica a Milano 🇪🇹',
     heroEyebrow: 'Milano · Etiopia ed Eritrea',
     heroFigureCap:
@@ -86,6 +105,13 @@ export const translations: Record<Locale, Messages> = {
     menuPageTitle: 'Il menu',
     menuPageLead:
       'Piatti della tradizione, preparati ogni giorno. Prezzi come in sala.',
+    galleryTitle: 'Foto del menu',
+    galleryLead:
+      'Pagine del menu stampato — tocca un’immagine per ingrandirla.',
+    galleryImageAlt: 'Foto menu',
+    galleryCloseAria: 'Chiudi',
+    galleryPrevAria: 'Foto precedente',
+    galleryNextAria: 'Foto successiva',
     menuPanelVegetarian: 'Menu vegetariano',
     menuPanelMeat: 'Secondi di carne',
     menuPanelRicePasta: 'Riso & pasta',

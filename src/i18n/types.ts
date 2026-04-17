@@ -3,7 +3,7 @@ export type Locale = 'en' | 'it'
 export type Messages = {
   langLabel: string
   navAria: string
-  nav: { food: string; story: string; menu: string; visit: string }
+  nav: { food: string; story: string; menu: string; gallery: string; visit: string }
   brandTagline: string
   heroEyebrow: string
   heroFigureCap: string
@@ -19,6 +19,12 @@ export type Messages = {
   storyBody: string
   menuPageTitle: string
   menuPageLead: string
+  galleryTitle: string
+  galleryLead: string
+  galleryImageAlt: string
+  galleryCloseAria: string
+  galleryPrevAria: string
+  galleryNextAria: string
   menuPanelVegetarian: string
   menuPanelMeat: string
   menuPanelRicePasta: string

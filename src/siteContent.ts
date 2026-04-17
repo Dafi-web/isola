@@ -55,6 +55,9 @@ export const siteContent = {
     emoji: '📜',
     lead: 'Piatti della tradizione, preparati ogni giorno. Prezzi come in sala.',
   },
+  gallery: {
+    emoji: '📸',
+  },
   actions: {
     menu: { label: 'Discover our menu', href: '#menu' },
     book: { label: 'Book your table', href: '#visit' },

@@ -1,5 +1,6 @@
 import { Hero } from './components/Hero'
 import { MenuBoard } from './components/MenuBoard'
+import { MenuPhotoGallery } from './components/MenuPhotoGallery'
 import { PageSection } from './components/PageSection'
 import { SiteHeader } from './components/SiteHeader'
 import { VisitCard } from './components/VisitCard'
@@ -9,12 +10,13 @@ import './App.css'
 
 function App() {
   const { locale, t } = useLanguage()
-  const { food, story, menuPage } = siteContent
+  const { food, story, menuPage, gallery } = siteContent
 
   const footerNav = [
     { label: t.nav.food, href: '#food' },
     { label: t.nav.story, href: '#story' },
     { label: t.nav.menu, href: '#menu' },
+    { label: t.nav.gallery, href: '#gallery' },
     { label: t.nav.visit, href: '#visit' },
   ]
 
@@ -41,6 +43,10 @@ function App() {
         <PageSection id="menu" emoji={menuPage.emoji} title={t.menuPageTitle}>
           <p className="prose menu-lead">{t.menuPageLead}</p>
           <MenuBoard />
+        </PageSection>
+
+        <PageSection id="gallery" emoji={gallery.emoji} title={t.galleryTitle}>
+          <MenuPhotoGallery />
         </PageSection>
 
         <VisitCard />

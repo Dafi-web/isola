@@ -29,6 +29,7 @@ export function SiteHeader() {
     { label: t.nav.food, href: '#food' },
     { label: t.nav.story, href: '#story' },
     { label: t.nav.menu, href: '#menu' },
+    { label: t.nav.gallery, href: '#gallery' },
     { label: t.nav.visit, href: '#visit' },
   ]
 
