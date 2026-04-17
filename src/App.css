@@ -738,27 +738,32 @@ main {
 .menu-panel__name {
   display: block;
   font-weight: 700;
-  font-size: 1.02rem;
+  font-size: clamp(0.92rem, 2.8vw, 1.02rem);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--ink);
   margin-bottom: 0.2rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .menu-panel__desc {
   margin: 0;
-  font-size: 0.94rem;
+  font-size: clamp(0.86rem, 2.2vw, 0.94rem);
   line-height: 1.5;
   color: var(--muted);
   font-weight: 500;
+  overflow-wrap: anywhere;
 }
 
 .menu-panel__price {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: clamp(0.92rem, 2.4vw, 1rem);
   color: var(--forest);
   white-space: nowrap;
   padding-top: 0.15rem;
+  align-self: start;
 }
 
 .menu-panel__price--muted {
@@ -807,15 +812,24 @@ main {
   color: var(--forest);
 }
 
-@media (max-width: 560px) {
+@media (max-width: 640px) {
   .menu-panel__row {
     grid-template-columns: 1fr;
-    padding: 0.9rem 0.85rem;
+    gap: 0.45rem 0;
+    padding: clamp(0.8rem, 3vw, 0.95rem) clamp(0.7rem, 3.5vw, 1rem);
   }
 
   .menu-panel__price {
     justify-self: start;
     padding-top: 0;
+  }
+
+  .menu-panel__list {
+    border-radius: 12px;
+  }
+
+  .menu-board__frame {
+    padding: clamp(0.85rem, 3vw, 1.35rem);
   }
 
   .hero__figure:hover {
@@ -917,8 +931,8 @@ main {
   margin: 0.75rem 0 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.5rem), 1fr));
-  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.25rem), 1fr));
+  gap: clamp(0.5rem, 2vw, 0.65rem);
 }
 
 .menu-gallery__cell {
@@ -932,6 +946,8 @@ main {
   border: none;
   border-radius: 14px;
   cursor: zoom-in;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   overflow: hidden;
   background: color-mix(in oklab, var(--surface-mint) 55%, var(--surface));
   box-shadow:
@@ -970,7 +986,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(0.75rem, 3vw, 1.5rem);
+  padding:
+    max(clamp(0.75rem, 3vw, 1.5rem), env(safe-area-inset-top, 0px))
+    max(clamp(0.75rem, 3vw, 1.5rem), env(safe-area-inset-right, 0px))
+    max(clamp(0.75rem, 3vw, 1.5rem), env(safe-area-inset-bottom, 0px))
+    max(clamp(0.75rem, 3vw, 1.5rem), env(safe-area-inset-left, 0px));
 }
 
 .menu-gallery__backdrop {
