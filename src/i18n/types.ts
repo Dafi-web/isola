@@ -43,4 +43,6 @@ export type Messages = {
   footerBackToTop: string
   footerNavAria: string
   spotlightAria: string
+  /** Short welcome phrases for the animated promo strip (cycled / marquee). */
+  promoPhrases: readonly string[]
 }

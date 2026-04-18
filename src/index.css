@@ -229,4 +229,14 @@ h3 {
   .site-header__burger-icon span {
     transition: none !important;
   }
+
+  .energy-corners__spark,
+  .promo-ticker__track,
+  .promo-ticker__dot {
+    animation: none !important;
+  }
+
+  .energy-corners__spark {
+    opacity: 0.5;
+  }
 }
