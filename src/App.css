@@ -4,12 +4,6 @@
   display: flex;
   flex-direction: column;
   min-height: 100svh;
-  border-left: var(--page-frame-w) solid var(--page-frame-border);
-  border-right: var(--page-frame-w) solid var(--page-frame-border);
-  box-shadow:
-    inset 1px 0 0 rgba(255, 255, 255, 0.38),
-    inset -1px 0 0 rgba(255, 255, 255, 0.38),
-    inset 0 0 0 1px var(--page-frame-inner-glow);
 }
 
 .app__ambient {
@@ -95,8 +89,8 @@
 .promo-ticker {
   position: fixed;
   bottom: 0;
-  left: var(--page-frame-w);
-  right: var(--page-frame-w);
+  left: 0;
+  right: 0;
   z-index: 40;
   height: 2.35rem;
   display: flex;
@@ -677,12 +671,8 @@ main {
     animation: hero-rise 0.88s cubic-bezier(0.22, 1, 0.36, 1) 0.06s both;
   }
 
-  .hero--motion .hero__inner > .hero__copy {
-    animation: hero-rise 0.88s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
-  }
-
   .hero--motion .hero__inner > .hero__actions {
-    animation: hero-rise 0.88s cubic-bezier(0.22, 1, 0.36, 1) 0.32s both;
+    animation: hero-rise 0.88s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
   }
 }
 
@@ -864,22 +854,6 @@ main {
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.55);
 }
 
-.hero__figure-cap {
-  margin: 0;
-  padding: 0.55rem 0.85rem 0.65rem;
-  font-size: clamp(0.7rem, 1.85vw, 0.82rem);
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--forest);
-  background: linear-gradient(
-    180deg,
-    color-mix(in oklab, var(--surface-mint) 92%, var(--surface)) 0%,
-    var(--surface-mint-strong) 100%
-  );
-  border-top: 1px solid var(--line-hair);
-}
-
 .hero__eyebrow {
   margin: 0 0 0.35rem;
   font-size: 0.72rem;
@@ -934,21 +908,6 @@ main {
   max-width: 36rem;
   margin-inline: auto;
   font-weight: 500;
-}
-
-.hero__copy {
-  max-width: 40rem;
-  margin: 0 auto 1.65rem;
-  text-align: left;
-  display: grid;
-  gap: 0.85rem;
-  color: var(--body);
-  font-size: 1.02rem;
-  line-height: 1.65;
-}
-
-.hero__copy p {
-  margin: 0;
 }
 
 .hero__actions {

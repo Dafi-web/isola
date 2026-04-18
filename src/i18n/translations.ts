@@ -23,13 +23,8 @@ export const translations: Record<Locale, Messages> = {
     },
     brandTagline: 'African cuisine · Eritrean & Italian specialties',
     heroEyebrow: 'Milan · Ethiopia & Eritrea',
-    heroFigureCap: 'Isola Verde · African cuisine, Eritrean & Italian specialties',
     heroImageAlt:
       'Isola Verde storefront: entrance with sign and dish photos, Milan.',
-    heroLead:
-      'Experience the true taste of Habesha culture in the heart of Milan.',
-    heroBody:
-      'At Isola Verde ሓምላይ ደሴት, we serve freshly prepared injera, rich traditional stews, and vibrant dishes made with passion, tradition, and hospitality.',
     actionsMenu: 'Discover our menu',
     actionsBook: 'Book your table',
     foodTitle: 'Our food',
@@ -102,14 +97,8 @@ export const translations: Record<Locale, Messages> = {
     },
     brandTagline: 'Cucina africana · specialità eritree e italiane',
     heroEyebrow: 'Milano · Etiopia ed Eritrea',
-    heroFigureCap:
-      'Isola Verde · Cucina africana, specialità eritree e italiane',
     heroImageAlt:
       'Vetrina del ristorante Isola Verde: ingresso, insegna e foto dei piatti, Milano.',
-    heroLead:
-      'Vivi il vero sapore della cultura habesha nel cuore di Milano.',
-    heroBody:
-      'Da Isola Verde ሓምላይ ደሴት serviamo injera fresca, ricchi wot tradizionali e piatti colorati preparati con passione, tradizione e ospitalità.',
     actionsMenu: 'Scopri il menu',
     actionsBook: 'Prenota un tavolo',
     foodTitle: 'La nostra cucina',

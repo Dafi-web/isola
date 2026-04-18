@@ -8,10 +8,7 @@ export type Messages = {
   nav: { food: string; story: string; menu: string; gallery: string; visit: string }
   brandTagline: string
   heroEyebrow: string
-  heroFigureCap: string
   heroImageAlt: string
-  heroLead: string
-  heroBody: string
   actionsMenu: string
   actionsBook: string
   foodTitle: string

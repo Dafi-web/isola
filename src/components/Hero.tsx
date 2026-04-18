@@ -46,15 +46,10 @@ export function Hero() {
               <p className="hero__tagline">{t.brandTagline}</p>
             </div>
           </div>
-          <figcaption className="hero__figure-cap">{t.heroFigureCap}</figcaption>
         </figure>
 
         <p className="sr-only">{t.heroImageAlt}</p>
 
-        <div className="hero__copy">
-          <p>{t.heroLead}</p>
-          <p>{t.heroBody}</p>
-        </div>
         <div className="hero__actions">
           <a className="button button--primary" href={actions.menu.href}>
             {t.actionsMenu}
