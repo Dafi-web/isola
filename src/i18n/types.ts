@@ -43,4 +43,6 @@ export type Messages = {
   footerBackToTop: string
   footerNavAria: string
   spotlightAria: string
+  /** Short lines for the bottom promo ticker (duplicated for seamless scroll). */
+  promoPhrases: readonly string[]
 }

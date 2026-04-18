@@ -229,4 +229,18 @@ h3 {
   .site-header__burger-icon span {
     transition: none !important;
   }
+
+  .app__shine__layer--breathe,
+  .promo-ticker__inner,
+  .promo-ticker__star {
+    animation: none !important;
+  }
+
+  .app__shine__layer--corners {
+    opacity: 0.35;
+  }
+
+  .app__shine__layer--breathe {
+    opacity: 0.15;
+  }
 }

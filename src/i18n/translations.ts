@@ -71,6 +71,14 @@ export const translations: Record<Locale, Messages> = {
     footerBackToTop: 'Back to top',
     footerNavAria: 'Footer quick links',
     spotlightAria: 'Quick links',
+    promoPhrases: [
+      'Come & enjoy — Isola Verde',
+      'Fresh Habesha flavours · Milan',
+      'Share the table · Share the joy',
+      'Injera & stews · Made with care',
+      'We’re open · See you soon',
+      'Book your visit · Warm welcome always',
+    ],
   },
   it: {
     langLabel: 'Lingua',
@@ -135,5 +143,13 @@ export const translations: Record<Locale, Messages> = {
     footerBackToTop: 'Torna su',
     footerNavAria: 'Collegamenti a piè di pagina',
     spotlightAria: 'Collegamenti rapidi',
+    promoPhrases: [
+      'Vieni a gustare — Isola Verde',
+      'Sapori habesha freschi · Milano',
+      'Condividi la tavola · condividi la gioia',
+      'Injera e wot · preparati con cura',
+      'Siamo aperti · Ti aspettiamo',
+      'Prenota · sempre il benvenuto',
+    ],
   },
 }
