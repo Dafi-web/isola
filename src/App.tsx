@@ -2,7 +2,6 @@ import { Hero } from './components/Hero'
 import { MenuBoard } from './components/MenuBoard'
 import { MenuPhotoGallery } from './components/MenuPhotoGallery'
 import { PageSection } from './components/PageSection'
-import { PromoEnergy } from './components/PromoEnergy'
 import { SpotlightRail } from './components/SpotlightRail'
 import { SiteHeader } from './components/SiteHeader'
 import { VisitCard } from './components/VisitCard'
@@ -25,7 +24,6 @@ function App() {
   return (
     <div className="app">
       <div className="app__ambient" aria-hidden />
-      <PromoEnergy />
       <SiteHeader />
       <main key={locale} lang={locale}>
         <Hero />

@@ -229,21 +229,4 @@ h3 {
   .site-header__burger-icon span {
     transition: none !important;
   }
-
-  .app__light-rays__pulse,
-  .app__light-rays__sweep {
-    animation: none !important;
-  }
-
-  .app__light-rays__glow {
-    opacity: 0.55;
-  }
-
-  .app__light-rays__pulse {
-    opacity: 0.25;
-  }
-
-  .app__light-rays__sweep {
-    opacity: 0;
-  }
 }
