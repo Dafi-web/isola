@@ -1173,16 +1173,14 @@ main {
   border-radius: var(--radius-lg);
   padding: clamp(1rem, 2.5vw, 1.6rem);
   background: linear-gradient(165deg, var(--surface) 0%, var(--surface-mint) 100%);
-  border: 2px solid var(--accent-border);
-  box-shadow:
-    var(--shadow-menu),
-    0 0 0 1px rgba(255, 255, 255, 0.65) inset;
+  border: 1px solid color-mix(in oklab, var(--line-hair) 75%, white);
+  box-shadow: 0 16px 42px rgba(58, 50, 41, 0.05);
 }
 
 .menu-panel + .menu-panel {
   margin-top: 1.75rem;
   padding-top: 1.75rem;
-  border-top: 1px dashed color-mix(in oklab, var(--line-hair) 92%, var(--muted));
+  border-top: 1px solid color-mix(in oklab, var(--line-hair) 88%, transparent);
 }
 
 .menu-panel__title {
@@ -1202,7 +1200,8 @@ main {
   padding: 0;
   border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid var(--line-hair);
+  border: 1px solid color-mix(in oklab, var(--line-hair) 65%, white);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.65) inset;
 }
 
 .menu-panel__row {
@@ -1219,8 +1218,8 @@ main {
 }
 
 .menu-panel__row:hover {
-  transform: translateX(2px);
-  box-shadow: inset 2px 0 0 color-mix(in oklab, var(--gold) 55%, var(--terracotta));
+  transform: translateX(1px);
+  box-shadow: inset 1px 0 0 color-mix(in oklab, var(--gold) 45%, var(--terracotta));
 }
 
 .menu-panel__row:nth-child(even) {
@@ -1281,7 +1280,7 @@ main {
     color-mix(in oklab, var(--surface-mint-strong) 85%, var(--gold)),
     var(--surface-mint-strong) 100%
   );
-  border: 1px solid var(--line-hair);
+  border: 1px solid color-mix(in oklab, var(--line-hair) 70%, white);
   display: grid;
   gap: 0.35rem;
   justify-items: center;
