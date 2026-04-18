@@ -24,7 +24,7 @@ export const translations: Record<Locale, Messages> = {
     brandTagline: 'African cuisine · Eritrean & Italian specialties',
     heroEyebrow: 'Milan · Ethiopia & Eritrea',
     heroImageAlt:
-      'Isola Verde storefront: entrance with sign and dish photos, Milan.',
+      'Traditional Ethiopian and Eritrean platter with injera, colourful wot stews and fresh sides on a wooden table.',
     actionsMenu: 'Discover our menu',
     actionsBook: 'Book your table',
     foodTitle: 'Our food',
@@ -98,7 +98,7 @@ export const translations: Record<Locale, Messages> = {
     brandTagline: 'Cucina africana · specialità eritree e italiane',
     heroEyebrow: 'Milano · Etiopia ed Eritrea',
     heroImageAlt:
-      'Vetrina del ristorante Isola Verde: ingresso, insegna e foto dei piatti, Milano.',
+      'Piatto tradizionale etio‑eritreo con injera, wot colorati e contorni, servito su un tavolo in legno.',
     actionsMenu: 'Scopri il menu',
     actionsBook: 'Prenota un tavolo',
     foodTitle: 'La nostra cucina',

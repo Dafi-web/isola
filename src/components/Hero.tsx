@@ -3,7 +3,7 @@ import { useLanguage } from '../i18n/useLanguage'
 import { siteContent } from '../siteContent'
 
 export function Hero() {
-  const { brand, actions } = siteContent
+  const { brand, actions, hero } = siteContent
   const { t } = useLanguage()
 
   return (
@@ -14,9 +14,9 @@ export function Hero() {
           <div className="hero__media">
             <img
               className="hero__storefront"
-              src="/storefront.jpg"
-              width={966}
-              height={974}
+              src={hero.imageSrc}
+              width={1920}
+              height={1080}
               alt=""
               decoding="async"
               fetchPriority="high"

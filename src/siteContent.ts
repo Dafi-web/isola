@@ -16,6 +16,9 @@ export const siteContent = {
     hours: 'Open daily for lunch & dinner',
   },
   hero: {
+    /** Full URL or path under `/public` for the home hero background photo. */
+    imageSrc:
+      'https://raw.githubusercontent.com/Dafi-web/menu-photos/main/WhatsApp%20Image%202026-04-17%20at%2015.24.31%20(2).jpeg',
     lead:
       'Experience the true taste of Habesha culture in the heart of Milan.',
     body:
