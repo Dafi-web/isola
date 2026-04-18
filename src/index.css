@@ -8,8 +8,10 @@
   --nav-orange-deep: #c75a12;
   --nav-orange-bright: #ff9f52;
   --accent-border: color-mix(in oklab, var(--nav-orange) 42%, var(--line-hair));
-  /** Thick vertical frame on the page (left/right). */
+  /** Thick vertical frame on the page (left/right) — warm orange, independent of nav bar color. */
   --page-frame-w: clamp(18px, 4.2vw, 38px);
+  --page-frame-border: var(--nav-orange-deep);
+  --page-frame-inner-glow: color-mix(in oklab, var(--nav-orange-bright) 35%, transparent);
   --brown-50: #f7f2ea;
   --brown-100: #ebe0d4;
   --brown-200: #d4c4b0;
@@ -51,14 +53,9 @@
     0 0 0 1px var(--line-hair),
     var(--shadow-soft);
 
-  --nav-bg: linear-gradient(
-    165deg,
-    var(--nav-orange-bright) 0%,
-    var(--nav-orange) 48%,
-    var(--nav-orange-deep) 100%
-  );
+  --nav-bg: linear-gradient(165deg, #fafafa 0%, #efefef 48%, #e3e3e3 100%);
   --nav-bg-hover: var(--nav-bg);
-  --nav-border: color-mix(in oklab, white 55%, var(--nav-orange-deep));
+  --nav-border: color-mix(in oklab, white 45%, #a8a8a8);
 
   --accent: var(--forest-soft);
   --accent-2: var(--terracotta);

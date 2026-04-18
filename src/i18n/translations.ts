@@ -21,7 +21,7 @@ export const translations: Record<Locale, Messages> = {
       gallery: 'Photos',
       visit: 'Visit',
     },
-    brandTagline: 'Ethiopian & Eritrean cuisine · Milan',
+    brandTagline: 'African cuisine · Eritrean & Italian specialties',
     heroEyebrow: 'Milan · Ethiopia & Eritrea',
     heroFigureCap: 'Isola Verde · African cuisine, Eritrean & Italian specialties',
     heroImageAlt:
@@ -100,7 +100,7 @@ export const translations: Record<Locale, Messages> = {
       gallery: 'Foto',
       visit: 'Dove siamo',
     },
-    brandTagline: 'Cucina etio‑eritrea · Milano',
+    brandTagline: 'Cucina africana · specialità eritree e italiane',
     heroEyebrow: 'Milano · Etiopia ed Eritrea',
     heroFigureCap:
       'Isola Verde · Cucina africana, specialità eritree e italiane',

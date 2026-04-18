@@ -10,40 +10,47 @@ export function Hero() {
     <section className="hero hero--motion" id="top" aria-labelledby="hero-heading">
       <div className="hero__aurora" aria-hidden />
       <div className="hero__inner">
-        <div className="hero__intro">
-          <p className="hero__eyebrow">{t.heroEyebrow}</p>
-          <p className="hero__gastronomy">
-            <span>{brand.gastronomy}</span>
-            <span className="hero__gastronomy-dot" aria-hidden>
-              {' '}
-              ·{' '}
-            </span>
-            <span lang="am">{brand.gastronomyScript}</span>
-          </p>
-        </div>
+        <figure className="hero__figure hero__figure--media">
+          <div className="hero__media">
+            <img
+              className="hero__storefront"
+              src="/storefront.jpg"
+              width={966}
+              height={974}
+              alt=""
+              decoding="async"
+              fetchPriority="high"
+            />
+            <div className="hero__media-scrim" aria-hidden />
+            <div className="hero__overlay">
+              <div className="hero__intro">
+                <p className="hero__eyebrow">{t.heroEyebrow}</p>
+                <p className="hero__gastronomy">
+                  <span>{brand.gastronomy}</span>
+                  <span className="hero__gastronomy-dot" aria-hidden>
+                    {' '}
+                    ·{' '}
+                  </span>
+                  <span lang="am">{brand.gastronomyScript}</span>
+                </p>
+              </div>
 
-        <HeroAdRotator />
+              <HeroAdRotator />
 
-        <figure className="hero__figure">
-          <img
-            className="hero__storefront"
-            src="/storefront.jpg"
-            width={966}
-            height={974}
-            alt={t.heroImageAlt}
-            decoding="async"
-            fetchPriority="high"
-          />
+              <h1 className="hero__title" id="hero-heading">
+                <span className="hero__title-line">{brand.name}</span>
+                <span className="hero__title-script" lang="am">
+                  {brand.nameScript}
+                </span>
+              </h1>
+              <p className="hero__tagline">{t.brandTagline}</p>
+            </div>
+          </div>
           <figcaption className="hero__figure-cap">{t.heroFigureCap}</figcaption>
         </figure>
 
-        <h1 className="hero__title" id="hero-heading">
-          <span className="hero__title-line">{brand.name}</span>
-          <span className="hero__title-script" lang="am">
-            {brand.nameScript}
-          </span>
-        </h1>
-        <p className="hero__tagline">{t.brandTagline}</p>
+        <p className="sr-only">{t.heroImageAlt}</p>
+
         <div className="hero__copy">
           <p>{t.heroLead}</p>
           <p>{t.heroBody}</p>
