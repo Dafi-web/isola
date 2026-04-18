@@ -1,3 +1,4 @@
+import { HeroAdRotator } from './HeroAdRotator'
 import { useLanguage } from '../i18n/useLanguage'
 import { siteContent } from '../siteContent'
 
@@ -20,6 +21,8 @@ export function Hero() {
             <span lang="am">{brand.gastronomyScript}</span>
           </p>
         </div>
+
+        <HeroAdRotator />
 
         <figure className="hero__figure">
           <img

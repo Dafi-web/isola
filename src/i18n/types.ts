@@ -45,4 +45,6 @@ export type Messages = {
   spotlightAria: string
   /** Short lines for the bottom promo ticker (duplicated for seamless scroll). */
   promoPhrases: readonly string[]
+  /** Rotating “advertisement” lines on the home hero. */
+  heroAdLines: readonly string[]
 }

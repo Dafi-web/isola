@@ -79,6 +79,14 @@ export const translations: Record<Locale, Messages> = {
       'We’re open · See you soon',
       'Book your visit · Warm welcome always',
     ],
+    heroAdLines: [
+      '✨ Today: authentic flavour & a warm welcome',
+      '🔥 Open every day · Lunch & dinner',
+      '⭐ Fresh injera · Homemade stews · Vegan & meat',
+      '💚 Milan’s Habesha table — reserve your spot',
+      '🍽️ Share the meal · Share the joy',
+      '📍 Isola Verde — your table is waiting',
+    ],
   },
   it: {
     langLabel: 'Lingua',
@@ -150,6 +158,14 @@ export const translations: Record<Locale, Messages> = {
       'Injera e wot · preparati con cura',
       'Siamo aperti · Ti aspettiamo',
       'Prenota · sempre il benvenuto',
+    ],
+    heroAdLines: [
+      '✨ Oggi: sapori autentici e accoglienza',
+      '🔥 Aperti ogni giorno · Pranzo e cena',
+      '⭐ Injera fresca · Wot fatti in casa · Veg & carne',
+      '💚 La tavola habesha a Milano — prenota',
+      '🍽️ Condividi il pasto · condividi la gioia',
+      '📍 Isola Verde — il tavolo ti aspetta',
     ],
   },
 }

@@ -2,8 +2,12 @@
 
 :root {
   /* Warm brown + forest green + white — editorial hospitality */
-  --cream: #faf6f0;
-  --cream-deep: #f0e8dc;
+  --cream: #fffbf5;
+  --cream-deep: #f5ebdc;
+  --nav-orange: #ea7a28;
+  --nav-orange-deep: #c75a12;
+  --nav-orange-bright: #ff9f52;
+  --accent-border: color-mix(in oklab, var(--nav-orange) 42%, var(--line-hair));
   --brown-50: #f7f2ea;
   --brown-100: #ebe0d4;
   --brown-200: #d4c4b0;
@@ -14,7 +18,7 @@
   --white: #fffcf8;
   --white-soft: color-mix(in oklab, var(--white) 96%, var(--brown-100));
 
-  --bg: var(--cream);
+  --bg: #fff8f0;
   --bg-deep: var(--cream-deep);
   --surface: var(--white);
   --surface-elevated: var(--white-soft);
@@ -45,9 +49,14 @@
     0 0 0 1px var(--line-hair),
     var(--shadow-soft);
 
-  --nav-bg: color-mix(in oklab, var(--white) 92%, var(--brown-50));
-  --nav-bg-hover: color-mix(in oklab, var(--white) 88%, var(--surface-mint));
-  --nav-border: var(--line-hair);
+  --nav-bg: linear-gradient(
+    165deg,
+    var(--nav-orange-bright) 0%,
+    var(--nav-orange) 48%,
+    var(--nav-orange-deep) 100%
+  );
+  --nav-bg-hover: var(--nav-bg);
+  --nav-border: color-mix(in oklab, white 55%, var(--nav-orange-deep));
 
   --accent: var(--forest-soft);
   --accent-2: var(--terracotta);
@@ -91,11 +100,17 @@ body {
   overflow-x: hidden;
   background-color: var(--bg);
   background:
-    radial-gradient(ellipse 130% 90% at 50% -20%, rgba(255, 252, 248, 0.98), transparent 55%),
-    radial-gradient(ellipse 95% 60% at 100% 5%, rgba(232, 242, 236, 0.45), transparent 50%),
-    radial-gradient(ellipse 80% 55% at 0% 90%, rgba(240, 232, 220, 0.55), transparent 52%),
-    radial-gradient(ellipse 50% 40% at 88% 98%, rgba(26, 92, 69, 0.04), transparent 48%),
-    linear-gradient(168deg, var(--cream) 0%, var(--cream-deep) 45%, var(--brown-100) 100%);
+    radial-gradient(ellipse 130% 95% at 50% -18%, rgba(255, 255, 255, 0.98), transparent 52%),
+    radial-gradient(ellipse 100% 65% at 100% 0%, rgba(255, 220, 185, 0.42), transparent 48%),
+    radial-gradient(ellipse 90% 60% at 0% 95%, rgba(230, 248, 235, 0.5), transparent 50%),
+    radial-gradient(ellipse 55% 45% at 85% 100%, rgba(255, 180, 120, 0.12), transparent 45%),
+    linear-gradient(
+      168deg,
+      #fffdfa 0%,
+      var(--cream) 38%,
+      color-mix(in oklab, var(--cream-deep) 70%, white) 72%,
+      color-mix(in oklab, var(--brown-100) 55%, #ffe8d4) 100%
+    );
 }
 
 #root {
@@ -211,6 +226,10 @@ h3 {
   }
 
   .hero__inner > * {
+    animation: none !important;
+  }
+
+  .hero__ad-text {
     animation: none !important;
   }
 
