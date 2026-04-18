@@ -3,6 +3,8 @@ export type Locale = 'en' | 'it'
 export type Messages = {
   langLabel: string
   navAria: string
+  navMenuOpen: string
+  navMenuClose: string
   nav: { food: string; story: string; menu: string; gallery: string; visit: string }
   brandTagline: string
   heroEyebrow: string

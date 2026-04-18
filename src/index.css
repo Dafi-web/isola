@@ -1,45 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Ethiopic:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Refined hospitality palette: warm ivory, deep emerald, antique gold */
-  --bg: #f5f3ee;
-  --bg-deep: #e8e4db;
-  --surface: #fffcf9;
-  --surface-mint: #e6efe8;
-  --surface-mint-strong: #d4e5da;
-  --ink: #121c17;
-  --body: #384840;
-  --muted: #5a6a62;
-  --line: #c8d5cc;
-  --line-hair: color-mix(in oklab, var(--forest) 14%, white 86%);
-  --forest: #0d4530;
-  --forest-soft: #1a6b4a;
-  --terracotta: #b3522e;
-  --gold: #b08d3a;
-  --glow-mint: rgba(95, 180, 130, 0.22);
-  --glow-forest: rgba(20, 70, 48, 0.18);
-  --glow-terra: rgba(180, 90, 48, 0.14);
+  /* Warm brown + forest green + white — editorial hospitality */
+  --cream: #faf6f0;
+  --cream-deep: #f0e8dc;
+  --brown-50: #f7f2ea;
+  --brown-100: #ebe0d4;
+  --brown-200: #d4c4b0;
+  --brown-400: #8b7762;
+  --brown-600: #5c4d3f;
+  --brown-800: #3a3229;
+
+  --white: #fffcf8;
+  --white-soft: color-mix(in oklab, var(--white) 96%, var(--brown-100));
+
+  --bg: var(--cream);
+  --bg-deep: var(--cream-deep);
+  --surface: var(--white);
+  --surface-elevated: var(--white-soft);
+  --surface-mint: #e8f2ec;
+  --surface-mint-strong: #d4e8dd;
+
+  --ink: var(--brown-800);
+  --body: #4a433a;
+  --muted: #6e6558;
+  --line: color-mix(in oklab, var(--brown-600) 18%, white 82%);
+  --line-hair: color-mix(in oklab, var(--brown-600) 12%, white 88%);
+
+  --forest: #1a5c45;
+  --forest-deep: #134030;
+  --forest-soft: #2a7a5e;
+  --terracotta: #a85c38;
+  --gold: #9e7d3a;
+
+  --glow-mint: rgba(80, 160, 120, 0.14);
+  --glow-forest: rgba(26, 92, 69, 0.12);
+  --glow-terra: rgba(168, 92, 56, 0.1);
+
   --shadow-soft:
-    0 18px 44px rgba(15, 42, 28, 0.07),
-    0 2px 8px rgba(15, 42, 28, 0.04);
-  --shadow-lift: 0 20px 50px rgba(15, 42, 28, 0.09);
+    0 12px 40px rgba(58, 50, 41, 0.07),
+    0 2px 8px rgba(58, 50, 41, 0.04);
+  --shadow-lift: 0 20px 48px rgba(58, 50, 41, 0.1);
   --shadow-menu:
-    0 0 0 1px color-mix(in oklab, var(--line-hair) 90%, transparent),
+    0 0 0 1px var(--line-hair),
     var(--shadow-soft);
 
-  --nav-bg-top: color-mix(in oklab, #fefdfb 94%, var(--surface-mint));
-  --nav-bg-bottom: color-mix(in oklab, var(--surface-mint) 58%, var(--bg) 42%);
-  --nav-bg-hover-top: color-mix(in oklab, white 95%, var(--surface-mint));
-  --nav-bg-hover-bottom: color-mix(in oklab, var(--surface-mint) 75%, white);
-  --nav-border: color-mix(in oklab, var(--forest) 16%, var(--line));
+  --nav-bg: color-mix(in oklab, var(--white) 92%, var(--brown-50));
+  --nav-bg-hover: color-mix(in oklab, var(--white) 88%, var(--surface-mint));
+  --nav-border: var(--line-hair);
 
   --accent: var(--forest-soft);
   --accent-2: var(--terracotta);
   --surface-2: var(--surface-mint);
 
   --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 22px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
   --radius-full: 999px;
   --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -74,11 +91,11 @@ body {
   overflow-x: hidden;
   background-color: var(--bg);
   background:
-    radial-gradient(ellipse 120% 85% at 50% -18%, rgba(255, 252, 248, 0.98), transparent 52%),
-    radial-gradient(ellipse 90% 55% at 100% 8%, rgba(210, 228, 215, 0.35), transparent 48%),
-    radial-gradient(ellipse 75% 50% at 0% 88%, rgba(205, 218, 208, 0.28), transparent 48%),
-    radial-gradient(ellipse 55% 38% at 85% 96%, rgba(176, 130, 55, 0.05), transparent 45%),
-    linear-gradient(165deg, #fcfaf6 0%, var(--bg) 42%, #e9ece6 78%, var(--bg-deep) 100%);
+    radial-gradient(ellipse 130% 90% at 50% -20%, rgba(255, 252, 248, 0.98), transparent 55%),
+    radial-gradient(ellipse 95% 60% at 100% 5%, rgba(232, 242, 236, 0.45), transparent 50%),
+    radial-gradient(ellipse 80% 55% at 0% 90%, rgba(240, 232, 220, 0.55), transparent 52%),
+    radial-gradient(ellipse 50% 40% at 88% 98%, rgba(26, 92, 69, 0.04), transparent 48%),
+    linear-gradient(168deg, var(--cream) 0%, var(--cream-deep) 45%, var(--brown-100) 100%);
 }
 
 #root {
@@ -115,30 +132,30 @@ h3 {
 @keyframes mesh-drift {
   0% {
     transform: scale(1) translate(0, 0) rotate(0deg);
-    opacity: 0.55;
+    opacity: 0.5;
   }
   50% {
-    transform: scale(1.08) translate(2%, -1.5%) rotate(2deg);
-    opacity: 0.72;
+    transform: scale(1.06) translate(2%, -1.5%) rotate(1.5deg);
+    opacity: 0.62;
   }
   100% {
-    transform: scale(1.03) translate(-1.5%, 1%) rotate(-1deg);
-    opacity: 0.6;
+    transform: scale(1.02) translate(-1.5%, 1%) rotate(-1deg);
+    opacity: 0.52;
   }
 }
 
 @keyframes hero-aurora {
   0% {
     transform: translate(-6%, -4%) scale(1);
-    opacity: 0.38;
+    opacity: 0.32;
   }
   50% {
-    transform: translate(4%, 6%) scale(1.08);
-    opacity: 0.55;
+    transform: translate(4%, 6%) scale(1.06);
+    opacity: 0.48;
   }
   100% {
     transform: translate(2%, -2%) scale(1.02);
-    opacity: 0.42;
+    opacity: 0.36;
   }
 }
 
@@ -203,5 +220,13 @@ h3 {
 
   .button--primary::after {
     animation: none !important;
+  }
+
+  .site-header__scrim {
+    animation: none !important;
+  }
+
+  .site-header__burger-icon span {
+    transition: none !important;
   }
 }

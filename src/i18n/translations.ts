@@ -12,6 +12,8 @@ export const translations: Record<Locale, Messages> = {
   en: {
     langLabel: 'Language',
     navAria: 'Primary navigation',
+    navMenuOpen: 'Open menu',
+    navMenuClose: 'Close menu',
     nav: {
       food: 'Food',
       story: 'Story',
@@ -73,6 +75,8 @@ export const translations: Record<Locale, Messages> = {
   it: {
     langLabel: 'Lingua',
     navAria: 'Navigazione principale',
+    navMenuOpen: 'Apri menu',
+    navMenuClose: 'Chiudi menu',
     nav: {
       food: 'Cibo',
       story: 'Storia',
