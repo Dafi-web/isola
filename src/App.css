@@ -4,6 +4,12 @@
   display: flex;
   flex-direction: column;
   min-height: 100svh;
+  border-left: var(--page-frame-w) solid var(--nav-orange-deep);
+  border-right: var(--page-frame-w) solid var(--nav-orange-deep);
+  box-shadow:
+    inset 1px 0 0 rgba(255, 255, 255, 0.38),
+    inset -1px 0 0 rgba(255, 255, 255, 0.38),
+    inset 0 0 0 1px color-mix(in oklab, var(--nav-orange-bright) 35%, transparent);
 }
 
 .app__ambient {
@@ -89,8 +95,8 @@
 .promo-ticker {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: var(--page-frame-w);
+  right: var(--page-frame-w);
   z-index: 40;
   height: 2.35rem;
   display: flex;
@@ -1656,7 +1662,7 @@ main {
   }
 }
 
-/* —— Footer (full-width band + centered inner) —— */
+/* —— Footer (full-width band + centered inner; clears fixed promo ticker) —— */
 .site-footer {
   position: relative;
   z-index: 1;
@@ -1665,19 +1671,21 @@ main {
   margin-top: auto;
   margin-inline: 0;
   padding: 0;
+  padding-bottom: calc(2.45rem + env(safe-area-inset-bottom, 0px));
   overflow: hidden;
   text-align: center;
   color: var(--muted);
-  border-top: 1px solid var(--line-hair);
+  border-top: 3px solid color-mix(in oklab, var(--nav-orange) 55%, var(--line-hair));
   background: linear-gradient(
     180deg,
-    var(--cream) 0%,
-    color-mix(in oklab, var(--brown-50) 35%, var(--surface-mint)) 55%,
-    color-mix(in oklab, var(--surface-mint-strong) 70%, var(--brown-100)) 100%
+    color-mix(in oklab, var(--nav-orange-bright) 12%, var(--cream)) 0%,
+    var(--cream) 22%,
+    color-mix(in oklab, var(--brown-50) 35%, var(--surface-mint)) 58%,
+    color-mix(in oklab, var(--surface-mint-strong) 72%, var(--brown-100)) 100%
   );
   box-shadow:
-    0 -1px 0 rgba(255, 255, 255, 0.7) inset,
-    0 -18px 44px rgba(58, 50, 41, 0.07);
+    0 -1px 0 rgba(255, 255, 255, 0.75) inset,
+    0 -22px 52px rgba(180, 75, 25, 0.1);
   transition:
     border-color 0.35s ease,
     box-shadow 0.4s ease;
@@ -1688,36 +1696,36 @@ main {
   left: 0;
   right: 0;
   top: 0;
-  height: 3px;
+  height: 6px;
   background: linear-gradient(
     90deg,
-    var(--forest),
-    color-mix(in oklab, var(--terracotta) 92%, var(--forest)),
-    color-mix(in oklab, var(--gold) 88%, var(--surface)),
-    var(--forest-soft)
+    var(--nav-orange-deep),
+    var(--nav-orange-bright),
+    color-mix(in oklab, var(--gold) 75%, var(--nav-orange)),
+    var(--forest-soft),
+    var(--nav-orange)
   );
-  opacity: 0.88;
+  opacity: 0.95;
 }
 
 .site-footer__inner {
   width: min(1040px, 100%);
   margin: 0 auto;
-  padding: clamp(1.35rem, 4.5vw, 2.35rem)
+  padding: clamp(1.5rem, 4.8vw, 2.65rem)
     max(0.85rem, env(safe-area-inset-left, 0px))
-    clamp(1.5rem, 4vw, 2.25rem)
+    clamp(1.65rem, 4.2vw, 2.5rem)
     max(0.85rem, env(safe-area-inset-right, 0px));
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(0.75rem, 2.5vw, 1.15rem);
+  gap: clamp(0.85rem, 2.6vw, 1.25rem);
 }
 
 .site-footer:hover {
-  border-top-color: #9ec4b0;
-  border-top-color: color-mix(in oklab, var(--forest) 28%, var(--line));
+  border-top-color: color-mix(in oklab, var(--nav-orange) 42%, var(--forest));
   box-shadow:
     0 -1px 0 rgba(255, 255, 255, 0.65) inset,
-    0 -26px 60px rgba(21, 53, 36, 0.12);
+    0 -28px 64px rgba(21, 53, 36, 0.12);
 }
 
 .site-footer__nav {
@@ -1754,9 +1762,9 @@ main {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--ink);
-  background: color-mix(in oklab, white 78%, var(--surface));
-  border: 1px solid var(--line-hair);
-  box-shadow: 0 2px 10px rgba(15, 42, 28, 0.05);
+  background: color-mix(in oklab, white 82%, var(--surface));
+  border: 2px solid color-mix(in oklab, var(--nav-orange) 32%, var(--line-hair));
+  box-shadow: 0 2px 12px rgba(15, 42, 28, 0.06);
   transition:
     color 0.25s ease,
     background 0.25s ease,
@@ -1768,9 +1776,9 @@ main {
 .site-footer__link:hover {
   color: var(--forest);
   background: #fff;
-  border-color: color-mix(in oklab, var(--forest) 22%, var(--line));
+  border-color: color-mix(in oklab, var(--nav-orange) 45%, var(--forest));
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(21, 53, 36, 0.12);
+  box-shadow: 0 10px 26px rgba(21, 53, 36, 0.12);
 }
 
 .site-footer__link:active {
@@ -1796,10 +1804,15 @@ main {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fefffe;
-  background: linear-gradient(135deg, var(--forest) 0%, var(--forest-soft) 100%);
-  border: 1px solid color-mix(in oklab, var(--forest) 55%, #1a3d2c);
-  box-shadow: 0 10px 28px rgba(30, 90, 61, 0.28);
+  color: #fffdf8;
+  background: linear-gradient(
+    135deg,
+    var(--nav-orange-deep) 0%,
+    var(--nav-orange) 45%,
+    var(--forest-soft) 100%
+  );
+  border: 2px solid color-mix(in oklab, white 28%, var(--nav-orange-deep));
+  box-shadow: 0 10px 30px rgba(180, 70, 22, 0.32);
   transition:
     transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.3s ease,
