@@ -47,10 +47,10 @@ export function Hero() {
         </div>
         <div className="hero__actions">
           <a className="button button--primary" href={actions.menu.href}>
-            👉 {t.actionsMenu}
+            {t.actionsMenu}
           </a>
           <a className="button button--ghost" href={actions.book.href}>
-            👉 {t.actionsBook}
+            {t.actionsBook}
           </a>
         </div>
       </div>

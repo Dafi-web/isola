@@ -40,4 +40,5 @@ export type Messages = {
   whatsappSr: string
   footerBackToTop: string
   footerNavAria: string
+  spotlightAria: string
 }

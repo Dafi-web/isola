@@ -19,7 +19,7 @@ export const translations: Record<Locale, Messages> = {
       gallery: 'Photos',
       visit: 'Visit',
     },
-    brandTagline: 'Authentic Ethiopian & Eritrean cuisine in Milan 🇪🇹',
+    brandTagline: 'Ethiopian & Eritrean cuisine · Milan',
     heroEyebrow: 'Milan · Ethiopia & Eritrea',
     heroFigureCap: 'Isola Verde · African cuisine, Eritrean & Italian specialties',
     heroImageAlt:
@@ -34,8 +34,8 @@ export const translations: Record<Locale, Messages> = {
     foodIntro:
       'Enjoy a unique dining experience built around sharing. Our dishes are served on traditional injera — perfect for enjoying together with friends and family.',
     foodBullets: [
-      'Vegetarian and vegan specialties 🌱',
-      'Traditional meat dishes 🍖',
+      'Vegetarian and vegan specialties',
+      'Traditional meat dishes',
       'Fresh, homemade recipes every day',
     ],
     storyTitle: 'Our story',
@@ -68,6 +68,7 @@ export const translations: Record<Locale, Messages> = {
     whatsappSr: 'Opens WhatsApp in a new tab.',
     footerBackToTop: 'Back to top',
     footerNavAria: 'Footer quick links',
+    spotlightAria: 'Quick links',
   },
   it: {
     langLabel: 'Lingua',
@@ -79,7 +80,7 @@ export const translations: Record<Locale, Messages> = {
       gallery: 'Foto',
       visit: 'Dove siamo',
     },
-    brandTagline: 'Cucina etio-eritrea autentica a Milano 🇪🇹',
+    brandTagline: 'Cucina etio‑eritrea · Milano',
     heroEyebrow: 'Milano · Etiopia ed Eritrea',
     heroFigureCap:
       'Isola Verde · Cucina africana, specialità eritree e italiane',
@@ -95,8 +96,8 @@ export const translations: Record<Locale, Messages> = {
     foodIntro:
       'Un’esperienza conviviale fatta di condivisione. I piatti sono serviti su injera tradizionale, ideali da gustare in compagnia di amici e famiglia.',
     foodBullets: [
-      'Specialità vegetariane e vegane 🌱',
-      'Piatti di carne tradizionali 🍖',
+      'Specialità vegetariane e vegane',
+      'Piatti di carne tradizionali',
       'Ricette fresche e fatte in casa ogni giorno',
     ],
     storyTitle: 'La nostra storia',
@@ -129,5 +130,6 @@ export const translations: Record<Locale, Messages> = {
     whatsappSr: 'Apre WhatsApp in una nuova scheda.',
     footerBackToTop: 'Torna su',
     footerNavAria: 'Collegamenti a piè di pagina',
+    spotlightAria: 'Collegamenti rapidi',
   },
 }

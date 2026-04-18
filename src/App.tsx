@@ -2,6 +2,7 @@ import { Hero } from './components/Hero'
 import { MenuBoard } from './components/MenuBoard'
 import { MenuPhotoGallery } from './components/MenuPhotoGallery'
 import { PageSection } from './components/PageSection'
+import { SpotlightRail } from './components/SpotlightRail'
 import { SiteHeader } from './components/SiteHeader'
 import { VisitCard } from './components/VisitCard'
 import { useLanguage } from './i18n/useLanguage'
@@ -26,6 +27,7 @@ function App() {
       <SiteHeader />
       <main key={locale} lang={locale}>
         <Hero />
+        <SpotlightRail />
 
         <PageSection id="food" emoji={food.emoji} title={t.foodTitle}>
           <p className="prose">{t.foodIntro}</p>
