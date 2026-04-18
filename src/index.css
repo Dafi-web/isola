@@ -230,13 +230,20 @@ h3 {
     transition: none !important;
   }
 
-  .energy-corners__spark,
-  .promo-ticker__track,
-  .promo-ticker__dot {
+  .app__light-rays__pulse,
+  .app__light-rays__sweep {
     animation: none !important;
   }
 
-  .energy-corners__spark {
-    opacity: 0.5;
+  .app__light-rays__glow {
+    opacity: 0.55;
+  }
+
+  .app__light-rays__pulse {
+    opacity: 0.25;
+  }
+
+  .app__light-rays__sweep {
+    opacity: 0;
   }
 }

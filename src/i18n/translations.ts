@@ -71,16 +71,6 @@ export const translations: Record<Locale, Messages> = {
     footerBackToTop: 'Back to top',
     footerNavAria: 'Footer quick links',
     spotlightAria: 'Quick links',
-    promoPhrases: [
-      'Come in & enjoy — we’re open!',
-      'Fresh injera · Cooked with love · Every day',
-      'Milan · Authentic Habesha flavors',
-      'See you soon at Isola Verde',
-      'Share the table — share the joy',
-      'Book your table — we’ll set a place for you',
-      'Vegetarian · Vegan · Meat — all welcome',
-      'Your table in Milan is ready — join us!',
-    ],
   },
   it: {
     langLabel: 'Lingua',
@@ -145,15 +135,5 @@ export const translations: Record<Locale, Messages> = {
     footerBackToTop: 'Torna su',
     footerNavAria: 'Collegamenti a piè di pagina',
     spotlightAria: 'Collegamenti rapidi',
-    promoPhrases: [
-      'Entra e gusta — siamo aperti!',
-      'Injera fresca · Fatto con cura · Ogni giorno',
-      'Milano · Sapori habesha autentici',
-      'Ti aspettiamo da Isola Verde',
-      'Condividi la tavola — condividi la gioia',
-      'Prenota — ti teniamo un posto',
-      'Vegetariano · Vegano · Carne — per tutti',
-      'Il tuo tavolo a Milano ti aspetta — vieni!',
-    ],
   },
 }
