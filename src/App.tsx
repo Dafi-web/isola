@@ -46,6 +46,14 @@ function App() {
 
         <PageSection id="menu" emoji={menuPage.emoji} title={t.menuPageTitle}>
           <p className="prose menu-lead">{t.menuPageLead}</p>
+          <div className="menu-pdf-links">
+            <a className="button button--primary" href={menuPage.pdfUrl} target="_blank" rel="noreferrer">
+              Open PDF Menu
+            </a>
+            <a className="button button--ghost" href={menuPage.pdfUrl} download>
+              Download PDF
+            </a>
+          </div>
           <MenuBoard />
         </PageSection>
 

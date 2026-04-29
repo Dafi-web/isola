@@ -1156,6 +1156,13 @@ main {
   margin-bottom: 0.25rem;
 }
 
+.menu-pdf-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0.55rem 0 1rem;
+}
+
 .bullet-list {
   margin: 0;
   padding-left: 1.15rem;
