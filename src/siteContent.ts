@@ -58,7 +58,7 @@ export const siteContent = {
     emoji: '📜',
     lead: 'Piatti della tradizione, preparati ogni giorno. Prezzi come in sala.',
     pdfUrl:
-      'https://github.com/Dafi-web/isola/raw/f4f293ec8cadbf63850dd4e66a7884629aacd33b/Menu_isol_260429_192031.pdf',
+      'https://github.com/Dafi-web/isola/raw/b094038b8d67e3e5a92ce88cce317cc8e93f44f9/Last_updated_menu.pdf',
   },
   gallery: {
     emoji: '📸',

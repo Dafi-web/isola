@@ -1163,6 +1163,21 @@ main {
   margin: 0.55rem 0 1rem;
 }
 
+.menu-pdf-preview {
+  margin: 0 0 1rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(58, 50, 41, 0.1);
+  background: var(--surface);
+}
+
+.menu-pdf-preview__frame {
+  display: block;
+  width: 100%;
+  min-height: min(78vh, 760px);
+  border: 0;
+}
+
 .bullet-list {
   margin: 0;
   padding-left: 1.15rem;

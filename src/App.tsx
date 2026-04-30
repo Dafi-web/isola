@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Hero } from './components/Hero'
 import { MenuBoard } from './components/MenuBoard'
 import { MenuPhotoGallery } from './components/MenuPhotoGallery'
@@ -13,6 +14,8 @@ import './App.css'
 function App() {
   const { locale, t } = useLanguage()
   const { food, story, menuPage, gallery } = siteContent
+  const [showMenuPdf, setShowMenuPdf] = useState(false)
+  const menuPdfPreviewUrl = `${menuPage.pdfUrl}#toolbar=0&view=FitH`
 
   const footerNav = [
     { label: t.nav.food, href: '#food' },
@@ -47,13 +50,27 @@ function App() {
         <PageSection id="menu" emoji={menuPage.emoji} title={t.menuPageTitle}>
           <p className="prose menu-lead">{t.menuPageLead}</p>
           <div className="menu-pdf-links">
-            <a className="button button--primary" href={menuPage.pdfUrl} target="_blank" rel="noreferrer">
-              Open PDF Menu
-            </a>
-            <a className="button button--ghost" href={menuPage.pdfUrl} download>
+            <button
+              type="button"
+              className="button button--primary"
+              onClick={() => setShowMenuPdf((prev) => !prev)}
+            >
+              {showMenuPdf ? 'Hide PDF Menu' : 'Open PDF Menu'}
+            </button>
+            <a className="button button--ghost" href={menuPage.pdfUrl} download target="_blank" rel="noreferrer">
               Download PDF
             </a>
           </div>
+          {showMenuPdf ? (
+            <div className="menu-pdf-preview">
+              <iframe
+                className="menu-pdf-preview__frame"
+                src={menuPdfPreviewUrl}
+                title="Isola Verde Menu PDF"
+                loading="lazy"
+              />
+            </div>
+          ) : null}
           <MenuBoard />
         </PageSection>
 
